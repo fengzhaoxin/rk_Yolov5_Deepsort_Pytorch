@@ -57,3 +57,19 @@ python track.py --yolo_weights yolov5/weights/person_yolov5n.pt --source test.mp
 - 如果更换为官方yolov5或其它第三方yolov5代码，可能因接口差异导致无法运行。
 - 请勿随意替换`yolov5`目录，否则可能出现推理、数据加载等接口不兼容的问题。
 - 如果需要训练自己的ReID模型，请参考 [ZQPei/deep_sort_pytorch.git](https://github.com/ZQPei/deep_sort_pytorch.git) 项目。
+
+## 拉取项目注意事项
+
+- 本项目的`yolov5`目录为**git submodule**，首次拉取项目请使用：
+
+```bash
+git clone --recurse-submodules <本项目地址>
+```
+
+- 如果已经拉取但未包含`yolov5`子模块，请执行：
+
+```bash
+git submodule update --init --recursive
+```
+
+- 请勿随意替换`yolov5`目录，否则可能出现接口不兼容问题。
