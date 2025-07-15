@@ -31,7 +31,7 @@
 3. 运行命令：
 
 ```bash
-python track.py --yolo_weights yolov5/weights/person_yolov5n.pt --source test.mp4
+python track.py --yolo_weights checkpoint/person_yolov5n.pt --source test.mp4
 ```
 
 - 结果视频会自动保存在`inference/test.mp4`。

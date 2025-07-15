@@ -4,13 +4,12 @@ sys.path.insert(0, './yolov5')
 
 from yolov5.models.experimental import attempt_load
 from yolov5.utils.dataloaders import LoadImages
-from yolov5.utils.general import check_img_size, non_max_suppression, scale_boxes
+from yolov5.utils.general import non_max_suppression, scale_boxes
 from yolov5.utils.torch_utils import select_device
 from deepsort.deepsort_minimal import DeepSortMinimal
 import argparse
 import os
 import time
-from pathlib import Path
 import cv2
 import torch
 
